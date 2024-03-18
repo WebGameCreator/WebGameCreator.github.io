@@ -8,13 +8,11 @@ function decode(input) {
 
 const query = new URLSearchParams(location.search);
 if (query.has("a")) {
-	document.open();
-	document.write(decode(query.get("a")));
-	document.close();
+	document.querySelector("html").innerHTML = decode(query.get("a"));
 }
 else {
 	document.getElementById("content").style.display = "block";
 	document.getElementById("openButton").onclick = function () {
-		window.open("https://webgamecreator.github.io/" + encode(document.getElementById("input")), "_self");
+		window.open("https://webgamecreator.github.io?a=" + encode(document.getElementById("input").value), "_self");
 	}
 }
