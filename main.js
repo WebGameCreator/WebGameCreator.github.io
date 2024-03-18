@@ -11,9 +11,9 @@ if (query.has("a")) {
 	document.querySelector("html").innerHTML = decode(query.get("a"));
 }
 else {
-	const editor = monaco.editor.create(document.getElementById('editor'), {
-		value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
-		language: 'javascript'
+	const editor = monaco.editor.create(document.getElementById("editor"), {
+		value: ["function x() {", "\tconsole.log(\"Hello world!\");", "}"].join("\n"),
+		language: "javascript"
 	});
 	document.getElementById("content").style.display = "block";
 	/*

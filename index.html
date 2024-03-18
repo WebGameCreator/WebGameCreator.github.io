@@ -12,12 +12,10 @@
 </head>
 <body>
 	<div id="content" style="display: none;">
-		<div id="editor"></div>
+		<div id="editor" style="width: 800px; height: 600px; border: 1px solid grey;"></div>
 		<button id="openButton">Open</button>
 	</div>
-	<script>
-		var require = { paths: { vs: "libraries/monaco-editor/min/vs" } };
-	</script>
+	<script>var require = { paths: { vs: "libraries/monaco-editor/min/vs" } };</script>
 	<script src="libraries/monaco-editor/min/vs/loader.js"></script>
 	<script src="libraries/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
 	<script src="libraries/monaco-editor/min/vs/editor/editor.main.js"></script>
