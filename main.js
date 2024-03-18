@@ -14,8 +14,7 @@ if (query.has("a")) {
 }
 else {
 	document.getElementById("content").style.display = "block";
-}
-
-function openUrl() {
-	window.open("https://webgamecreator.github.io/" + encode(document.getElementById("input")), "_self");
+	document.getElementById("openButton").onclick = function () {
+		window.open("https://webgamecreator.github.io/" + encode(document.getElementById("input")), "_self");
+	}
 }
