@@ -16,13 +16,12 @@ else {
 `function hello() {
 	alert('Hello world!');
 }`,
-		language: "javascript",
+		language: "html",
 		automaticLayout: true,
+		theme: "vs-dark"
 	});
 	document.getElementById("content").style.display = "block";
-	/*
 	document.getElementById("openButton").onclick = function () {
-		window.open("https://webgamecreator.github.io?a=" + encode(document.getElementById("input").value), "_self");
+		window.open("https://webgamecreator.github.io?a=" + encode(editor.getValue()), "_self");
 	}
-	*/
 }
