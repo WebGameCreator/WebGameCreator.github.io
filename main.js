@@ -12,8 +12,12 @@ if (query.has("a")) {
 }
 else {
 	const editor = monaco.editor.create(document.getElementById("editor"), {
-		value: ["function x() {", "\tconsole.log(\"Hello world!\");", "}"].join("\n"),
-		language: "javascript"
+		value:
+`function hello() {
+	alert('Hello world!');
+}`,
+		language: "javascript",
+		automaticLayout: true,
 	});
 	document.getElementById("content").style.display = "block";
 	/*
